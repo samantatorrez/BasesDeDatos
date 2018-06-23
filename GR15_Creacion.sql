@@ -408,13 +408,13 @@ INSERT INTO unc_247498.gr15_huesped_reserva(
 
 INSERT INTO unc_247498.gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
-	VALUES (1, 1, 1, '2018-09-15 20:53:48', 'malo', 1);
+	VALUES (2, 1, 1, '2018-09-15 20:53:48', 'malo', 1);
 INSERT INTO unc_247498.gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
-	VALUES (1, 2, 2, '2018-09-15 20:53:48', 'malo', 2);
+	VALUES (2, 2, 2, '2018-09-15 20:53:48', 'malo', 2);
 INSERT INTO unc_247498.gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
-	VALUES (1, 3, 3, '2018-09-15 20:53:48', 'bueno', 3);
+	VALUES (2, 3, 3, '2018-09-15 20:53:48', 'bueno', 3);
 INSERT INTO unc_247498.gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 1, 4, '2018-09-15 20:53:48', 'bueno', 4);
