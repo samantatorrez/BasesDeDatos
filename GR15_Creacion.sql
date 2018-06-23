@@ -413,6 +413,20 @@ INSERT INTO unc_247498.gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 2, 5, '2018-09-15 20:53:48', 'excelente', 5);
 
-
+INSERT INTO unc_247498.gr15_habitacion(
+	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
+	VALUES (1, 1, 1, 2, 1, true, 1, false, true, 1, false, 1);
+INSERT INTO unc_247498.gr15_habitacion(
+	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
+	VALUES (2, 2, 2, 2, 1, true, 1, false, true, 1, false, 1);
+INSERT INTO unc_247498.gr15_habitacion(
+	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
+	VALUES (3, 3, 2, 2, 1, true, 1, false, true, 1, false, 1);
+INSERT INTO unc_247498.gr15_habitacion(
+	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
+	VALUES (4, 4, 2, 2, 1, false, 1, true, false, 1, true, 1);
+INSERT INTO unc_247498.gr15_habitacion(
+	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
+	VALUES (5, 5, 2, 2, 1, false, 1, true, false, 1, true, 1);
 -- End of file.
 
