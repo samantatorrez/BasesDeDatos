@@ -325,6 +325,9 @@ INSERT INTO unc_247498.gr15_huesped(
 INSERT INTO unc_247498.gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 5);
+INSERT INTO unc_247498.gr15_huesped(
+	tipo_doc, nro_doc)
+	VALUES (1, 1);
 
 INSERT INTO unc_247498.gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
