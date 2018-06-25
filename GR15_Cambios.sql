@@ -1,18 +1,18 @@
-﻿----------------------------------------------------------RESTRICCIONES------------------------------------------------
+----------------------------------------------------------RESTRICCIONES------------------------------------------------
 
 -----------------------------------RESTRICCIONES INCISO A
 -- Agrega constraint para que la fecha en la que se hizo reserva sea menor o igual a cuando comienza la reserva
 ALTER TABLE GR15_RESERVA ADD CONSTRAINT CK_GR15_CONSISTENCIA_FECHA_RESERVA CHECK (fecha_desde>= fecha_reserva);
 
-/*--ERROR ck_gr15_duracion_reserva. El constraint chequea que fecha_desde < fecha_hasta y el periodo minimo es de 1 dia
-INSERT INTO gr15_reserva(
+--ERROR ck_gr15_duracion_reserva. El constraint chequea que fecha_desde < fecha_hasta y el periodo minimo es de 1 dia
+/*INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
-	VALUES (6, '2017-10-05', '2017-10-09', '2017-10-07', 1, 1, 100, 1, 1, 1,null);
+	VALUES (6, '2017-10-05', '2017-10-09', '2017-10-07', 1, 1, 100, 1, 2, 5,null);
 */
 /*--ERROR ck_gr15_consistencia_fecha_reserva. El constraint chequea que fecha_reserva <=fecha_desde.
 INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
-	VALUES (6, '2017-10-06', '2017-10-05', '2017-10-07', 1, 1, 100, 1, 1, 1,null);
+	VALUES (6, '2017-10-06', '2017-10-05', '2017-10-07', 1, 1, 100, 1, 2, 5,null);
 */
 
 
@@ -110,11 +110,12 @@ EXECUTE PROCEDURE TRFN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() ;
 /*-- ERROR: 'El propietario del departamente no puede ser huesped de la reserva'
 INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
-	VALUES (1, 1, 1);
+	VALUES (1, 2, 2);
 UPDATE gr15_huesped_reserva
-	SET tipo_doc=1, nro_doc=1
+SET tipo_doc=1, nro_doc=1
 	WHERE id_reserva=1;
 */
+
 
 
 
