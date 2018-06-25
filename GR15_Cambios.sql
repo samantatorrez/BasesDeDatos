@@ -1,4 +1,4 @@
-----------------------------------------------------------RESTRICCIONES------------------------------------------------
+﻿----------------------------------------------------------RESTRICCIONES------------------------------------------------
 
 -----------------------------------RESTRICCIONES INCISO A
 -- Agrega constraint para que la fecha en la que se hizo reserva sea menor o igual a cuando comienza la reserva
@@ -18,14 +18,9 @@ INSERT INTO gr15_reserva(
 
 
 -----------------------------------RESTRICCIONES INCISO B
-<<<<<<< HEAD
 -- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.
 -- necesito un trigger cuando se updatea id_tipo_depto que si tiene pone menos piesas de las que tiene alerte tambien                                                                                                                                                                                                                                                                                                                                                                                  
 CREATE OR REPLACE FUNCTION TRFN_GR15_VALIDAR_CANTIDAD_HABITACIONES() 
-=======
--- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.                                                                                                                                                                                                                                                                                                                                                                               
-CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_CANTIDAD_HABITACIONES() 
->>>>>>> origin/master
 RETURNS trigger AS 
 $$
 BEGIN 
@@ -124,7 +119,7 @@ UPDATE gr15_huesped_reserva
 
 
 -----------------------------------RESTRICCIONES INCISO D
-CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() 
+CREATE OR REPLACE FUNCTION TRFN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() 
 RETURNS trigger AS 
 $$
 BEGIN 
@@ -143,9 +138,9 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER GR15_HUESPED_RESERVA_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES BEFORE INSERT ON GR15_HUESPED_RESERVA
+CREATE TRIGGER TR_GR15_HUESPED_RESERVA_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES BEFORE INSERT ON GR15_HUESPED_RESERVA
 FOR EACH ROW
-EXECUTE PROCEDURE FN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() ;
+EXECUTE PROCEDURE TRFN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() ;
 
 /*--ERROR:  No puede haber mas huespedes de las agregados, para este tipo de departamento
 INSERT INTO gr15_huesped_reserva(
@@ -198,7 +193,6 @@ CREATE OR REPLACE VIEW GR15_Departamentos_con_recaudacion
 	FROM gr15_reserva r JOIN gr15_pago p
 	       ON (r.id_reserva = p.id_reserva)
 	WHERE fecha_pago > (current_date - 180)
-<<<<<<< HEAD
 	GROUP BY id_dpto;
 
 
@@ -208,6 +202,3 @@ CREATE OR REPLACE VIEW GR15_Departamentos_por_ciudad_y_rating
 	WHERE r.id_dpto = d.id_dpto
 	  AND r.id_reserva = c.id_reserva
 	ORDER BY d.ciudad, c.estrellas DESC;
-=======
-	GROUP BY id_dpto
->>>>>>> origin/master
