@@ -1,4 +1,4 @@
-﻿----------------------------------------------------------RESTRICCIONES------------------------------------------------
+----------------------------------------------------------RESTRICCIONES------------------------------------------------
 
 -----------------------------------RESTRICCIONES INCISO A
 -- Agrega constraint para que la fecha en la que se hizo reserva sea menor o igual a cuando comienza la reserva
@@ -18,8 +18,7 @@ INSERT INTO gr15_reserva(
 
 
 -----------------------------------RESTRICCIONES INCISO B
--- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.
--- necesito un trigger cuando se updatea id_tipo_depto que si tiene pone menos piesas de las que tiene alerte tambien                                                                                                                                                                                                                                                                                                                                                                                  
+-- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.                                                                                                                                                                                                                                                                                                                                                                               
 CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_CANTIDAD_HABITACIONES() 
 RETURNS trigger AS 
 $$
@@ -106,7 +105,7 @@ CREATE TRIGGER GR15_HUESPED_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED BEFORE INSER
 FOR EACH ROW
 EXECUTE PROCEDURE FN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() ;
 
-/* ERROR: 'El propietario del departamente no puede ser huesped de la reserva'
+/*-- ERROR: 'El propietario del departamente no puede ser huesped de la reserva'
 INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (1, 1, 1);
@@ -115,6 +114,37 @@ UPDATE gr15_huesped_reserva
 	WHERE id_reserva=1;
 */
 
+
+
+-----------------------------------RESTRICCIONES INCISO D
+CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() 
+RETURNS trigger AS 
+$$
+BEGIN 
+	IF EXISTS (SELECT d.id_dpto, t.cant_max_huespedes,COUNT(*) 
+				FROM GR15_DEPARTAMENTO d
+					INNER JOIN GR15_TIPO_DPTO t ON t.id_tipo_depto = d.id_tipo_depto
+					INNER JOIN GR15_RESERVA r ON r.id_dpto = d.id_dpto
+					INNER JOIN GR15_HUESPED_RESERVA h ON r.id_reserva = h.id_reserva
+				GROUP BY d.id_dpto, t.cant_max_huespedes
+				HAVING d.id_dpto=(select id_dpto from GR15_RESERVA WHERE id_reserva=NEW.id_reserva) AND t.cant_max_huespedes<COUNT(*) +1 )
+	THEN 
+	 raise exception 'No puede haber mas huespedes de las agregados, para este tipo de departamento';
+	END IF; 
+	return new; 
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER GR15_HUESPED_RESERVA_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES BEFORE INSERT ON GR15_HUESPED_RESERVA
+FOR EACH ROW
+EXECUTE PROCEDURE FN_GR15_VALIDAR_QUE_NO_SUPERE_EL_MAX_DE_HUESPEDES() ;
+
+/*--ERROR:  No puede haber mas huespedes de las agregados, para este tipo de departamento
+INSERT INTO gr15_huesped_reserva(
+	tipo_doc, nro_doc, id_reserva)
+	VALUES (2, 2, 1);
+*/
 
 ----------------------------------------------------------SERVICIOS------------------------------------------------
 
