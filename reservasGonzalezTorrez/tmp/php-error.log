@@ -1,0 +1,121 @@
+[24-Jun-2018 22:25:14 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:25:14 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:05 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:05 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:06 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:06 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:06 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:06 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:32 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:26:32 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 17
+[24-Jun-2018 22:32:43 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:32:43 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:32:49 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:32:49 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:32:50 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:32:50 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 30
+[24-Jun-2018 22:34:04 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:34:04 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:34:06 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:34:06 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:34:26 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:34:26 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:35:09 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:35:09 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:41 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:41 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:43 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:43 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:45 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:37:45 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:39:14 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:14 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:15 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:15 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:16 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:17 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:39:17 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[24-Jun-2018 22:40:16 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:40:16 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:40:18 Europe/Berlin] PHP Notice:  Undefined variable: db in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:40:18 Europe/Berlin] PHP Fatal error:  Cannot access empty property in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 29
+[24-Jun-2018 22:54:24 Europe/Berlin] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "`"
+LINE 1: SELECT id_dpto FROM `gr15_departamento`
+                            ^
+[24-Jun-2018 22:56:53 Europe/Berlin] Unable to load template 'file:departamentos.tpl'
+[24-Jun-2018 22:57:18 Europe/Berlin] Unable to load template 'file:departamentos.tpl'
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:03:51 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:09:19 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:09:20 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:09:20 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[24-Jun-2018 23:09:20 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 54
+[24-Jun-2018 23:09:20 Europe/Berlin] PHP Notice:  Undefined index: id_dtpo in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 55
+[25-Jun-2018 03:58:32 Europe/Berlin] PHP Fatal error:  Call to undefined method Controller::mostrarFechasDisponibles() in C:\xampp\htdocs\reservasTorrezGonzalez\route.php on line 40
+[25-Jun-2018 04:03:17 Europe/Berlin] PHP Notice:  Undefined variable: categoria in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 36
+[25-Jun-2018 04:13:37 Europe/Berlin] PHP Notice:  Use of undefined constant month - assumed 'month' in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 49
+[25-Jun-2018 04:13:37 Europe/Berlin] PHP Warning:  Illegal string offset 'Enero' in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 49
+[25-Jun-2018 04:16:53 Europe/Berlin] PHP Notice:  Use of undefined constant month - assumed 'month' in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 50
+[25-Jun-2018 04:16:53 Europe/Berlin] PHP Warning:  Illegal string offset 'Enero' in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 50
+[25-Jun-2018 04:37:11 Europe/Berlin] PHP Warning:  Missing argument 1 for Model::obtenerFechasNoDisponibles(), called in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 51 and defined in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[25-Jun-2018 04:37:11 Europe/Berlin] PHP Warning:  Missing argument 2 for Model::obtenerFechasNoDisponibles(), called in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 51 and defined in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 21
+[25-Jun-2018 04:37:11 Europe/Berlin] PHP Notice:  Undefined variable: departamento in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 26
+[25-Jun-2018 04:37:11 Europe/Berlin] PHP Notice:  Undefined variable: nro_mes in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 26
+[25-Jun-2018 04:37:11 Europe/Berlin] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "="
+LINE 1: ...ha_hasta FROM unc_247498.gr15_reservaWHERE id_dpto=$1 AND (E...
+                                                             ^
+[25-Jun-2018 04:38:27 Europe/Berlin] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "="
+LINE 1: ...ha_hasta FROM unc_247498.gr15_reservaWHERE id_dpto=$1 AND (E...
+                                                             ^
+[25-Jun-2018 04:38:32 Europe/Berlin] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "="
+LINE 1: ...ha_hasta FROM unc_247498.gr15_reservaWHERE id_dpto=$1 AND (E...
+                                                             ^
+[25-Jun-2018 04:44:20 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:24 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:25 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:25 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:26 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:26 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:31 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 04:44:31 Europe/Berlin] SQLSTATE[HY093]: Invalid parameter number: :id_dpto
+[25-Jun-2018 05:45:51 Europe/Berlin] PHP Notice:  Undefined variable: departamentos in C:\xampp\htdocs\reservasTorrezGonzalez\app\View.php on line 20
+[25-Jun-2018 05:45:51 Europe/Berlin] PHP Notice:  Undefined index: departamentos in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 50
+[25-Jun-2018 05:45:51 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 50
+[25-Jun-2018 05:46:24 Europe/Berlin] PHP Notice:  Undefined index: departamentos in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 50
+[25-Jun-2018 05:46:24 Europe/Berlin] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\reservasTorrezGonzalez\templates_c\3579d1650e6aff62c583cb2da3ebb01a217cd4d8_0.file.departamentos.tpl.php on line 50
+[25-Jun-2018 08:06:51 Europe/Berlin] PHP Fatal error:  Call to undefined method View::mostrarHome() in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 32
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Notice:  Undefined index: host in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 29
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Notice:  Undefined index: port in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 30
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Notice:  Undefined index: database in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 31
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 32
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Notice:  Undefined index: password in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 33
+[25-Jun-2018 08:10:13 Europe/Berlin] SQLSTATE[08006] [7] could not translate host name "port=0" to address: Unknown host
+[25-Jun-2018 08:10:13 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on null in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 25
+[25-Jun-2018 08:17:17 Europe/Berlin] PHP Warning:  Missing argument 1 for Model::__construct(), called in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 45 and defined in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 6
+[25-Jun-2018 08:17:32 Europe/Berlin] PHP Warning:  Missing argument 1 for Model::__construct(), called in C:\xampp\htdocs\reservasTorrezGonzalez\app\Controller.php on line 45 and defined in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 6
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 24
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 25
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 26
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 27
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\reservasTorrezGonzalez\app\Connection.php on line 28
+[25-Jun-2018 08:17:56 Europe/Berlin] SQLSTATE[08006] [7] could not translate host name "port=0" to address: Unknown host
+[25-Jun-2018 08:17:56 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on null in C:\xampp\htdocs\reservasTorrezGonzalez\app\Model.php on line 25
+[25-Jun-2018 08:39:23 Europe/Berlin] PHP Fatal error:  Class 'Connection' not found in C:\xampp\htdocs\reservasGonzalezTorrez\app\Model.php on line 9
