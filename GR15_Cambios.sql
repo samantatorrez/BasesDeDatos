@@ -18,8 +18,14 @@ INSERT INTO gr15_reserva(
 
 
 -----------------------------------RESTRICCIONES INCISO B
+<<<<<<< HEAD
+-- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.
+-- necesito un trigger cuando se updatea id_tipo_depto que si tiene pone menos piesas de las que tiene alerte tambien                                                                                                                                                                                                                                                                                                                                                                                  
+CREATE OR REPLACE FUNCTION TRFN_GR15_VALIDAR_CANTIDAD_HABITACIONES() 
+=======
 -- Si se agrega una habitación para un departamento, no puede ser mayor a la cantidad que está establecido en tipo de departamento.                                                                                                                                                                                                                                                                                                                                                                               
 CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_CANTIDAD_HABITACIONES() 
+>>>>>>> origin/master
 RETURNS trigger AS 
 $$
 BEGIN 
@@ -37,9 +43,10 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER GR15_HABITACION_VALIDAR_CANTIDAD_HABITACIONES BEFORE INSERT ON GR15_HABITACION
+CREATE TRIGGER TR_GR15_HABITACION_VALIDAR_CANTIDAD_HABITACIONES 
+BEFORE INSERT ON GR15_HABITACION
 FOR EACH ROW
-EXECUTE PROCEDURE FN_GR15_VALIDAR_CANTIDAD_HABITACIONES() ;
+EXECUTE PROCEDURE TRFN_GR15_VALIDAR_CANTIDAD_HABITACIONES() ;
 
 /*--Prueba para 'No puede haber mas habitaciones de las creadas para este tipo de departamento'
 INSERT INTO gr15_habitacion(
@@ -48,10 +55,8 @@ INSERT INTO gr15_habitacion(
 */
 
 
-
-
 -----------------------------------RESTRICCIONES INCISO C
-CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR() 
+CREATE OR REPLACE FUNCTION TRFN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR() 
 RETURNS trigger AS 
 $$
 BEGIN 
@@ -67,9 +72,10 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER GR15_RESERVA_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR BEFORE INSERT OR UPDATE ON GR15_RESERVA
+CREATE TRIGGER TR_GR15_RESERVA_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR 
+BEFORE INSERT OR UPDATE ON GR15_RESERVA
 FOR EACH ROW
-EXECUTE PROCEDURE FN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR() ;
+EXECUTE PROCEDURE TRFN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_RESERVADOR() ;
 
 /* --Pruebas para 'El propietario del departamento no puede reservarlo'
 INSERT INTO gr15_reserva(
@@ -84,7 +90,7 @@ UPDATE gr15_reserva
 
 
 -----------------------------------RESTRICCIONES INCISO C
-CREATE OR REPLACE FUNCTION FN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() 
+CREATE OR REPLACE FUNCTION TRFN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() 
 RETURNS trigger AS 
 $$
 BEGIN 
@@ -101,9 +107,10 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER GR15_HUESPED_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED BEFORE INSERT OR UPDATE ON GR15_HUESPED_RESERVA
+CREATE TRIGGER TR_GR15_HUESPED_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED 
+BEFORE INSERT OR UPDATE ON GR15_HUESPED_RESERVA
 FOR EACH ROW
-EXECUTE PROCEDURE FN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() ;
+EXECUTE PROCEDURE TRFN_GR15_VALIDAR_QUE_NO_ES_PROPIETARIO_Y_HUESPED() ;
 
 /*-- ERROR: 'El propietario del departamente no puede ser huesped de la reserva'
 INSERT INTO gr15_huesped_reserva(
@@ -147,20 +154,60 @@ INSERT INTO gr15_huesped_reserva(
 */
 
 ----------------------------------------------------------SERVICIOS------------------------------------------------
+CREATE OR REPLACE FUNCTION PR_GR15_obtener_estado_departamento (fecha Date)
+ RETURNS TABLE (
+ id_dpto integer,
+ estado text
+)
+AS $$
+BEGIN
+    RETURN QUERY SELECT d.id_dpto,
+        CASE WHEN d.id_dpto in (SELECT r.id_dpto
+                            FROM GR15_RESERVA r
+                            WHERE r.fecha_desde <= fecha
+                                   AND r.fecha_hasta >= fecha)
+            THEN 'OCUPADO'
+            ELSE 'LIBRE'
+        END
+    AS estado
+    FROM GR15_DEPARTAMENTO d;
+END; $$
+LANGUAGE 'plpgsql';
+
+
+CREATE OR REPLACE FUNCTION PR_GR15_obtener_departamentos_disponibles (fechaD Date, fechaH Date, ciu varchar)
+ RETURNS TABLE (
+ id_dpto integer
+)
+AS $$
+BEGIN
+     RETURN QUERY SELECT d.id_dpto
+          	  FROM GR15_DEPARTAMENTO d
+          	  WHERE ciudad = ciu
+            	    AND d.id_dpto in (SELECT r.id_dpto
+                    		      FROM GR15_RESERVA r
+                    		      WHERE fecha_desde <= fechaD
+                    			AND fecha_hasta >= fechaH);
+END; $$
+LANGUAGE 'plpgsql';
 
 
 ----------------------------------------------------------VISTAS------------------------------------------------
-CREATE OR REPLACE VIEW GR15_DPTOSXRATING 
+CREATE OR REPLACE VIEW GR15_Departamentos_con_recaudacion 
+	AS SELECT id_dpto, SUM(importe)
+	FROM gr15_reserva r JOIN gr15_pago p
+	       ON (r.id_reserva = p.id_reserva)
+	WHERE fecha_pago > (current_date - 180)
+<<<<<<< HEAD
+	GROUP BY id_dpto;
+
+
+CREATE OR REPLACE VIEW GR15_Departamentos_por_ciudad_y_rating
 	AS SELECT d.*, c.estrellas
 	FROM gr15_reserva r, gr15_departamento d, gr15_comentario c
 	WHERE r.id_dpto = d.id_dpto
 	  AND r.id_reserva = c.id_reserva
 	ORDER BY d.ciudad, c.estrellas DESC;
-
-
-CREATE OR REPLACE VIEW GR15_RecaudacionDptos 
-	AS SELECT id_dpto, SUM(importe)
-	FROM gr15_reserva r JOIN gr15_pago p
-	       ON (r.id_reserva = p.id_reserva)
-	WHERE fecha_pago > (current_date - 180)
+=======
 	GROUP BY id_dpto
+>>>>>>> origin/master
