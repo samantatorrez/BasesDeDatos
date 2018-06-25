@@ -17,6 +17,8 @@ DROP FUNCTION trfn_gr15_validar_que_no_es_propietario_y_huesped() CASCADE;
 
 DROP FUNCTION trfn_gr15_validar_que_no_es_propietario_y_reservador() CASCADE;
 
+DROP FUNCTION trfn_gr15_validar_que_no_supere_el_max_de_huespedes() CASCADE;
+
 
 ----------------------------BORRADO DE TABLAS------------------------
 DROP TABLE gr15_comentario CASCADE;
