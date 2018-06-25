@@ -27,6 +27,7 @@ CREATE TABLE GR15_Departamento (
     id_dpto int  NOT NULL,
     descripcion varchar(80)  NOT NULL,
     superficie decimal(10,2)  NOT NULL,
+    ciudad varchar (50) NOT NULL,
     id_tipo_depto int  NOT NULL,
     tipo_doc int  NOT NULL,
     nro_doc decimal(11,0)  NOT NULL,
@@ -237,207 +238,207 @@ ALTER TABLE GR15_Reserva ADD CONSTRAINT FK_GR15_Reserva_Huesped
     INITIALLY IMMEDIATE
 ;
 -- Inserts
-INSERT INTO unc_247498.gr15_tipo_dpto(
+INSERT INTO gr15_tipo_dpto(
 	id_tipo_depto, cant_habitaciones, cant_banios, cant_max_huespedes)
 	VALUES (1, 1, 1, 1);
-INSERT INTO unc_247498.gr15_tipo_dpto(
+INSERT INTO gr15_tipo_dpto(
 	id_tipo_depto, cant_habitaciones, cant_banios, cant_max_huespedes)
 	VALUES (2, 2, 2, 2);
-INSERT INTO unc_247498.gr15_tipo_dpto(
+INSERT INTO gr15_tipo_dpto(
 	id_tipo_depto, cant_habitaciones, cant_banios, cant_max_huespedes)
 	VALUES (3, 3, 3, 3);
-INSERT INTO unc_247498.gr15_tipo_dpto(
+INSERT INTO gr15_tipo_dpto(
 	id_tipo_depto, cant_habitaciones, cant_banios, cant_max_huespedes)
 	VALUES (4, 4, 4, 4);
-INSERT INTO unc_247498.gr15_tipo_dpto(
+INSERT INTO gr15_tipo_dpto(
 	id_tipo_depto, cant_habitaciones, cant_banios, cant_max_huespedes)
 	VALUES (5, 5, 5, 5);
 
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (1, 1, 'ana', 'franz', '1977-10-05', 'ana@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (1, 2, 'belen', 'gianner', '1977-10-06', 'belen@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (1, 3, 'celeste', 'hernandez', '1977-10-07', 'celeste@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (2, 1, 'diana', 'ilia', '1977-10-08', 'diana@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (2, 2, 'emilio', 'joanz', '1977-10-09', 'emilia@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (2, 3, 'dian', 'johan', '1977-10-08', 'dian@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (2, 4, 'elias', 'kuroshitsuji', '1977-10-09', 'elias@gmail.com');
-INSERT INTO unc_247498.gr15_persona(
+INSERT INTO gr15_persona(
 	tipo_doc, nro_doc, apellido, nombre, fecha_nac, e_mail)
 	VALUES (2, 5, 'chise', 'koru', '1977-10-08', 'chise@gmail.com');
 
-INSERT INTO unc_247498.gr15_departamento(
-	id_dpto, descripcion, superficie, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
-	VALUES (1, 'a', 2, 1, 1, 1, 500, 100);
-INSERT INTO unc_247498.gr15_departamento(
-	id_dpto, descripcion, superficie, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
-	VALUES (2, 'b', 2, 2, 1, 2, 600, 200);
-INSERT INTO unc_247498.gr15_departamento(
-	id_dpto, descripcion, superficie, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
-	VALUES (3, 'c', 2, 3, 1, 3, 700, 250);
-INSERT INTO unc_247498.gr15_departamento(
-	id_dpto, descripcion, superficie, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
-	VALUES (4, 'd', 2, 4, 1, 1, 800, 300);
-INSERT INTO unc_247498.gr15_departamento(
-	id_dpto, descripcion, superficie, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
-	VALUES (5, 'e', 2, 5, 1, 2, 900, 350);
+INSERT INTO gr15_departamento(
+	id_dpto, descripcion, superficie, ciudad, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
+	VALUES (1, 'a', 2, 'Tandil', 1, 1, 1, 500, 100);
+INSERT INTO gr15_departamento(
+	id_dpto, descripcion, superficie, ciudad, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
+	VALUES (2, 'b', 2, 'Tandil', 2, 1, 2, 600, 200);
+INSERT INTO gr15_departamento(
+	id_dpto, descripcion, superficie, ciudad, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
+	VALUES (3, 'c', 2, 'Buenos aires', 3, 1, 3, 700, 250);
+INSERT INTO gr15_departamento(
+	id_dpto, descripcion, superficie, ciudad, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
+	VALUES (4, 'd', 2, 'Buenos Aires', 4, 1, 1, 800, 300);
+INSERT INTO gr15_departamento(
+	id_dpto, descripcion, superficie, ciudad, id_tipo_depto, tipo_doc, nro_doc, precio_noche, costo_limpieza)
+	VALUES (5, 'e', 2, 'Tandil', 5, 1, 2, 900, 350);
 
-INSERT INTO unc_247498.gr15_costo_depto(
+INSERT INTO gr15_costo_depto(
 	id_dpto, fecha_desde, fecha_hasta, precio_noche)
 	VALUES (1, '2017-10-05', '2017-11-05', 500);
-INSERT INTO unc_247498.gr15_costo_depto(
+INSERT INTO gr15_costo_depto(
 	id_dpto, fecha_desde, fecha_hasta, precio_noche)
 	VALUES (2, '2017-10-05', '2017-11-05', 501);
-INSERT INTO unc_247498.gr15_costo_depto(
+INSERT INTO gr15_costo_depto(
 	id_dpto, fecha_desde, fecha_hasta, precio_noche)
 	VALUES (3, '2017-10-05', '2017-11-05', 502);
-INSERT INTO unc_247498.gr15_costo_depto(
+INSERT INTO gr15_costo_depto(
 	id_dpto, fecha_desde, fecha_hasta, precio_noche)
 	VALUES (4, '2017-10-05', '2017-11-05', 503);
-INSERT INTO unc_247498.gr15_costo_depto(
+INSERT INTO gr15_costo_depto(
 	id_dpto, fecha_desde, fecha_hasta, precio_noche)
 	VALUES (5, '2017-10-05', '2017-11-05', 504);
 
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 1);
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 2);
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 3);
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 4);
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (2, 5);
-INSERT INTO unc_247498.gr15_huesped(
+INSERT INTO gr15_huesped(
 	tipo_doc, nro_doc)
 	VALUES (1, 1);
 
-INSERT INTO unc_247498.gr15_reserva(
+INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
 	VALUES (1, '2017-10-05', '2017-10-05', '2017-10-07', 1, 1, 100, 1, 2, 1,null);
-INSERT INTO unc_247498.gr15_reserva(
+INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
 	VALUES (2, '2017-10-05', '2017-10-05', '2017-10-08', 2, 2, 100, 1, 2, 2,null);
-INSERT INTO unc_247498.gr15_reserva(
+INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
 	VALUES (3, '2017-10-05', '2017-10-05', '2017-10-09', 3, 3, 100, 1, 2, 3,null);
-INSERT INTO unc_247498.gr15_reserva(
+INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
 	VALUES (4, '2017-10-05', '2017-10-05', '2017-10-10', 4, 4, 100, 1, 2, 1,null);
-INSERT INTO unc_247498.gr15_reserva(
+INSERT INTO gr15_reserva(
 	id_reserva, fecha_reserva, fecha_desde, fecha_hasta, tipo, id_dpto, valor_noche, usa_limpieza, tipo_doc, nro_doc, preferencias)
 	VALUES (5, '2017-10-05', '2017-10-05', '2017-10-13', 5, 5, 100, 1, 2, 2,null);
 	
-INSERT INTO unc_247498.gr15_estado_luego_ocupacion_reserva(
+INSERT INTO gr15_estado_luego_ocupacion_reserva(
 	fecha, id_reserva, comentario, limpiado, problemas_encontrados)
 	VALUES (1, 1, 'asdf', true, false);
-INSERT INTO unc_247498.gr15_estado_luego_ocupacion_reserva(
+INSERT INTO gr15_estado_luego_ocupacion_reserva(
 	fecha, id_reserva, comentario, limpiado, problemas_encontrados)
 	VALUES (2, 2, 'asd', true, false);
-INSERT INTO unc_247498.gr15_estado_luego_ocupacion_reserva(
+INSERT INTO gr15_estado_luego_ocupacion_reserva(
 	fecha, id_reserva, comentario, limpiado, problemas_encontrados)
 	VALUES (3, 3, 'asd', true, false);
-INSERT INTO unc_247498.gr15_estado_luego_ocupacion_reserva(
+INSERT INTO gr15_estado_luego_ocupacion_reserva(
 	fecha, id_reserva, comentario, limpiado, problemas_encontrados)
 	VALUES (4, 4, 'asdf', false, true);
-INSERT INTO unc_247498.gr15_estado_luego_ocupacion_reserva(
+INSERT INTO gr15_estado_luego_ocupacion_reserva(
 	fecha, id_reserva, comentario, limpiado, problemas_encontrados)
 	VALUES (5, 5, 'asdf', false, true);
 
-INSERT INTO unc_247498.gr15_tipo_pago(
+INSERT INTO gr15_tipo_pago(
 	id_tipo_pago, nombre)
 	VALUES (1, 'ab');
-INSERT INTO unc_247498.gr15_tipo_pago(
+INSERT INTO gr15_tipo_pago(
 	id_tipo_pago, nombre)
 	VALUES (2, 'ac');
-INSERT INTO unc_247498.gr15_tipo_pago(
+INSERT INTO gr15_tipo_pago(
 	id_tipo_pago, nombre)
 	VALUES (3, 'ad');
-INSERT INTO unc_247498.gr15_tipo_pago(
+INSERT INTO gr15_tipo_pago(
 	id_tipo_pago, nombre)
 	VALUES (4, 'ae');
-INSERT INTO unc_247498.gr15_tipo_pago(
+INSERT INTO gr15_tipo_pago(
 	id_tipo_pago, nombre)
 	VALUES (5, 'af');
 
-INSERT INTO unc_247498.gr15_pago(
+INSERT INTO gr15_pago(
 	fecha_pago, id_reserva, id_tipo_pago, comentario, importe)
 	VALUES (now(), 1, 1, 'asdf', 500);
-INSERT INTO unc_247498.gr15_pago(
+INSERT INTO gr15_pago(
 	fecha_pago, id_reserva, id_tipo_pago, comentario, importe)
 	VALUES (now(), 2, 2, 'asdf', 501);
-INSERT INTO unc_247498.gr15_pago(
+INSERT INTO gr15_pago(
 	fecha_pago, id_reserva, id_tipo_pago, comentario, importe)
 	VALUES (now(), 3, 3, 'asdf', 502);
-INSERT INTO unc_247498.gr15_pago(
+INSERT INTO gr15_pago(
 	fecha_pago, id_reserva, id_tipo_pago, comentario, importe)
 	VALUES (now(), 4, 4, 'asdf', 503);
-INSERT INTO unc_247498.gr15_pago(
+INSERT INTO gr15_pago(
 	fecha_pago, id_reserva, id_tipo_pago, comentario, importe)
 	VALUES (now(), 5, 5, 'asdf', 504);
 
-INSERT INTO unc_247498.gr15_huesped_reserva(
+INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (2, 1, 1);
-INSERT INTO unc_247498.gr15_huesped_reserva(
+INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (2, 2, 2);
-INSERT INTO unc_247498.gr15_huesped_reserva(
+INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (2, 3, 3);
-INSERT INTO unc_247498.gr15_huesped_reserva(
+INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (2, 1, 4);
-INSERT INTO unc_247498.gr15_huesped_reserva(
+INSERT INTO gr15_huesped_reserva(
 	tipo_doc, nro_doc, id_reserva)
 	VALUES (2, 2, 5);
 
-INSERT INTO unc_247498.gr15_comentario(
+INSERT INTO gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 1, 1, '2018-09-15 20:53:48', 'malo', 1);
-INSERT INTO unc_247498.gr15_comentario(
+INSERT INTO gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 2, 2, '2018-09-15 20:53:48', 'malo', 2);
-INSERT INTO unc_247498.gr15_comentario(
+INSERT INTO gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 3, 3, '2018-09-15 20:53:48', 'bueno', 3);
-INSERT INTO unc_247498.gr15_comentario(
+INSERT INTO gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 1, 4, '2018-09-15 20:53:48', 'bueno', 4);
-INSERT INTO unc_247498.gr15_comentario(
+INSERT INTO gr15_comentario(
 	tipo_doc, nro_doc, id_reserva, fecha_hora_comentario, comentario, estrellas)
 	VALUES (2, 2, 5, '2018-09-15 20:53:48', 'excelente', 5);
 
-INSERT INTO unc_247498.gr15_habitacion(
+INSERT INTO gr15_habitacion(
 	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
 	VALUES (1, 1, 1, 2, 1, true, 1, false, true, 1, false, 1);
-INSERT INTO unc_247498.gr15_habitacion(
+INSERT INTO gr15_habitacion(
 	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
 	VALUES (2, 2, 2, 2, 1, true, 1, false, true, 1, false, 1);
-INSERT INTO unc_247498.gr15_habitacion(
+INSERT INTO gr15_habitacion(
 	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
 	VALUES (3, 3, 2, 2, 1, true, 1, false, true, 1, false, 1);
-INSERT INTO unc_247498.gr15_habitacion(
+INSERT INTO gr15_habitacion(
 	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
 	VALUES (4, 4, 2, 2, 1, false, 1, true, false, 1, true, 1);
-INSERT INTO unc_247498.gr15_habitacion(
+INSERT INTO gr15_habitacion(
 	id_dpto, id_habitacion, posib_camas_simples, posib_camas_dobles, posib_camas_kind, tv, sillon, frigobar, mesa, sillas, cocina, escritorio)
 	VALUES (5, 5, 2, 2, 1, false, 1, true, false, 1, true, 1);
 -- End of file.
